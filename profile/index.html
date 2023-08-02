@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Profile</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="brand">
+        <a href="/">MeShop.</a>
+      </div>
+      <div class="nav-items">
+        <a href="/">Home</a>
+        <a href="/login">Login</a> 
+        <a href="/signup">Signup</a>
+        <a href="/cart">My Cart</a>
+        <a href="/profile">Profile</a>
+      </div>
+    </nav>
+     <h1>Profile</h1>
+     <div class="container">
+      <h1>Welcome, <span id="userName"></span>!</h1>
+      <div>
+        <h2>Edit Profile</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" required>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" required>
+        <button id="saveProfile">Save</button>
+      </div>
+      <div>
+        <h2>Change Password</h2>
+        <label for="oldPassword">Old Password:</label>
+        <input type="password" id="oldPassword" required>
+        <label for="newPassword">New Password:</label>
+        <input type="password" id="newPassword" required>
+        <label for="confirmPassword">Confirm New Password:</label>
+        <input type="password" id="confirmPassword" required>
+        <button id="changePassword">Change Password</button>
+      </div>
+      <button id="logout">Logout</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
